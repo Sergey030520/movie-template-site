@@ -1,0 +1,320 @@
+@import url(../fonts/BebasNeueCyrillic/bebas-font.css);
+@import url(../fonts/Poppins/poppins-font.css);
+@import url(../fonts/Montserrat/monserrat-font.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font: 400 48px Bebas, sans-serif;
+    color: #fff;
+
+}
+.wrapper{
+    width: 1440px;
+    margin: 0 auto;
+    background: #151A20 url(../images/header-bg.png) no-repeat right 0;
+}
+.content{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 30px;
+    /*min-height: 100vh;*/
+}
+.header{
+    height: 760px;
+}
+.logo{
+    font: 600 20px Poppins, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    margin-bottom: 145px;
+}
+.header__user{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.header__user > img{
+    max-height: 22px;
+}
+.header__user-info{
+    display: flex;
+    gap: 5.5px;
+}
+.header__user-box{
+    display: flex;
+    flex-direction: column;
+}
+.header__ts{
+    display: flex;
+    gap: 10px;
+}
+.header__ts img{
+    align-self: center;
+}
+.header__nickname{
+    font: 600 14px Poppins, sans-serif;
+}
+.header__status{
+    font: 400 12px Montserrat, sans-serif;
+}
+
+/*header top*/
+
+.yellow{
+    color: #FFC30D;
+}
+.header__movie{
+    display: flex;
+    justify-content: space-between;
+}
+.header__movie-animation{
+    width: 1170px;
+    height: 450px;
+    opacity:0.20;
+    -moz-opacity:0.45;
+    filter:alpha(opacity=45);
+    position: absolute;
+    z-index:15;
+    background: url(../images/fire-anim.gif);
+}
+
+.header__movie > img {
+    align-self: center;
+}
+.header__movie-info{
+    max-width: 530px;
+    margin-bottom: 10px;
+}
+.header__movie-info > div{
+    margin-bottom: 20px;
+}
+.header__movie .header__movie-film {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.header__movie-name{
+    font-size: 64px;
+}
+.header__movie-en-name{
+    display: flex;
+    align-items: center;
+}
+.header__movie-en-name  span {
+    font-size: 36px;
+}
+.header__movie-description{
+    font: 300 16px Poppins, sans-serif;
+}
+.header__movie-params{
+    display: flex;
+    gap: 20px;
+    font-size: 24px;
+}
+.header__movie-subscribe{
+    max-width: 200px;
+    height: 50px;
+    font: 600 14px Poppins, sans-serif;
+}
+.header__movie-subscribe{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font: 600 14px Poppins, sans-serif;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(270deg, #8743FF 0%, #4136F1 100%);
+    box-shadow: 0 15px 30px rgba(20, 102, 204, 0.16);
+    backdrop-filter: blur(15px);
+    border-radius: 13px;
+    display: inline-grid;
+}
+.center-element{
+    align-self: center;
+}
+
+/*header movie end*/
+
+/*nav-bar start*/
+.main-content{
+    display: flex;
+}
+.nav-bar{
+    position: sticky;
+    width: 54px;
+    height: 561px;
+    left: 0;
+    top: 115px;
+    background: #1E242C;
+    box-shadow: 9px 4px 18px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 0 50px 50px 0;
+    padding-top: 43px;
+    display: flex;
+    flex-direction: column;
+}
+.nav-bar ol{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.nav-bar li{
+}
+
+.nav-bar__pre-last-el{
+    margin-top: 34px;
+}
+/*nav-bar end*/
+
+.movie-block{
+    margin-bottom: 60px;
+}
+.movie-block header{
+    font: 600 30px Poppins, sans-serif;
+    margin-bottom: 45px;
+}
+/*? new*/
+.new{
+    display: grid;
+    grid-template: repeat(2, 1fr) / 550px 290px 290px;
+    gap: 20px;
+    grid-template-areas: "fire holy mort" "fire sword sword";
+}
+.new__fire{
+    grid-area: fire;
+    background: url(../images/ref/fire.png) no-repeat;
+}
+.new__holly{
+    grid-area: holy;
+    background: url(../images/ref/hollywood.png) no-repeat;
+}
+.new__mortal{
+    grid-area: mort;
+    background: url(../images/ref/mortal.png) no-repeat;
+}
+.new__sword{
+    grid-area: sword;
+    background:  url(../images/ref/sword.png) no-repeat;
+}
+.new__description-movie{
+    margin-top: 51%;
+}
+
+.new__fire .new__description-movie{
+    margin-top: 60%;
+}
+.new__sword .new__description-movie{
+    margin-top: 18px;
+}
+.new__movie-rating{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 0 0 0 6%;
+}
+.new__fire .new__movie-rating{
+    gap: 20px;
+    font-size: 24px;
+}
+.new__fire .new__movie-rating div:not(:last-child){
+    display: inline-flex;
+}
+.new__sword .new__movie-rating{
+    font-size: 32px;
+}
+
+
+.new__movie-button-yellow{
+    font-size: 14px;
+    min-width: 99px;
+    min-height: 31px;
+    border-radius: 10px 0;
+    background: #FFC30D;
+    display: inline-grid;
+}
+.new__fire .new__movie-button-yellow{
+   font-size: 36px;
+    width: 188px;
+    height: 60px;
+}
+.new__sword .new__movie-button-yellow{
+    font-size: 21px;
+    width: 145px;
+    height: 46px;
+}
+
+
+
+.new__movie-button-blue{
+    font-size: 20px;
+    min-width: 200px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(270deg, #8743FF 0%, #4136F1 100%);
+    border-radius: 0 10px 10px 0;
+    display: inline-grid;
+    text-align: center;
+    align-content: center;
+}
+.new__fire .new__movie-button-blue{
+    height: 37px;
+}
+.new__sword .new__movie-button-blue{
+    height: 24px;
+}
+
+.new__movie-about{
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin: 5% 5%;
+}
+.new__fire .new__movie-about{
+    font-size: 48px;
+    line-height: 48px;
+    margin: 7% 5%;
+}
+.new__sword .new__movie-about{
+    font-size: 48px;
+}
+
+
+.new__fire .new__movie-button-blue{
+    font-size: 24px;
+}
+.new__movie-rating span{
+    align-self: center;
+    text-align: center;
+}
+/*? new end*/
+footer{
+    background: #1E242C;
+}
+footer .content{
+    display: flex;
+    justify-content: space-between;
+    height: 125px;
+    align-items: center;
+    padding-top: 0;
+}
+.footer__copy{
+    font: 300 14px Poppins, sans-serif;
+    color: #8E8E8E;
+}
+.footer__contacts{
+    display: flex;
+    font-size: 18px;
+    gap: 30px;
+}
+
